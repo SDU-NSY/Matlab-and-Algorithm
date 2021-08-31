@@ -77,3 +77,28 @@ A = [1,2,3
 ### 枚举法
 
 - rem(a , b)取余函数 ，结果是 a % b
+
+#### 退火算法遇到的函数
+
+- randperm()
+  - randperm(n) : 返回行向量，包含从1 到 n 没有重复元素的整数随机排列
+  - randperm(n , k) : 返回行向量，包含从1 到 n 间随机选择 k 个 唯一整数
+- floor()：朝负无穷大四舍五入
+  - floor(X)：将X中的每个元素四舍五入到小于或等于该元素的最接近整数
+  - 关于秒的用法 (没有重点关注)
+
+- sort：升序排列矩阵，也可以同时返回索引
+- find()：
+  - find(X)：返回一个包含数组X中每个非0元素元素的线性索引向量
+  - find(X , n)：返回前 n 个非 0 元素的索引
+
+#### SVM遇到的函数
+
+- mapstd()：将数据标准化
+  - [b,ps] = mapstd(A)  b是按==行==标准化 (均值为0，方差为1) 后的数据 ， ps是各种平均值和方差
+  - mapstd('apply' , x , ps)： 利用ps对x进行标准化处理
+  - mapstd('reverse' , y , ps): 利用ps对y进行还原
+
+**函数调用**
+
+![image-20210901001320801](C:\Users\nishiyu\AppData\Roaming\Typora\typora-user-images\image-20210901001320801.png)
